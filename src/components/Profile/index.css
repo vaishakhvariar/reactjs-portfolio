@@ -1,0 +1,72 @@
+
+.profile-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  width: 100%; 
+  /* height: 100%;  */
+  padding: 1rem;
+  border-radius: 2%;
+  /* z-index: 1; */
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  background: repeating-radial-gradient(
+    circle at 0 0, /* Adjusts position as needed */
+    transparent 0,
+    transparent 10px, /* Adjusts the size of the gradient pattern */
+    #ffffff55 10px,
+    /* #f0f0f0 10px, */
+    /* #ffffff55 20px,  */
+    #f0f0f0 20px 
+  ), repeating-linear-gradient( #ffffff55, #ffffff );
+
+}
+
+/* CSS for image container */
+.image-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    /* z-index: -1;
+    position: relative; */
+  }
+  
+  /* CSS for the circular frame container */
+  .circular-frame {
+    width: 70vh; 
+    height: 70vh; 
+    border-radius: 50%; /* Makes it circular */
+    /* border: 1px solid #36454F; Add a border and adjust the color */
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    overflow: hidden; /* Hides overflowing image content */
+    object-fit: contain;
+  }
+  
+  /* CSS for the profile image */
+  .profile-image {
+    max-width: 100%; 
+    /* height: auto;  */
+    height: 100%;
+    display: block; 
+  }
+
+  .text-area {
+    flex: 1; /* Allow it to grow and take available space */
+    display: flex; /* Use Flexbox for text area layout */
+    flex-direction: column;
+    align-items: flex-start;
+    /* position: relative;
+    z-index: -1; */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #333; /* Change the color to your preference */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  p {
+    font-size: 1rem; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust line height fo  r readability */
+    color: #666; /* Change the color to your preference */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    text-align: left;
+  }
