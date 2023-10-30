@@ -11,6 +11,7 @@
   /* display: flex;
   justify-content: flex-start;  */
   height: 100%; /* Ensure full height */
+  margin-right: auto; 
   /* padding: 0 20px;
   padding-bottom: 2rem; */
 }
@@ -32,11 +33,12 @@
   /* background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 40px;  */
-  /* text-align: center; */
-  display: flex;
-  justify-content:center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content:center;
+  align-items: center; */
   height: 100%;
+  flex: 1;
+  text-align: center;
 }
 
 /* Style for the navigation list */
