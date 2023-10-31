@@ -4,18 +4,13 @@
   align-items: center; 
   justify-content: flex-start; 
   width: 100%; 
-  /* height: 100%;  */
-  padding: 1rem;
   border-radius: 1%;
-  /* z-index: 1; */
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
   background: repeating-radial-gradient(
     circle at 0 0, /* Adjusts position as needed */
     transparent 0,
     transparent 10px, /* Adjusts the size of the gradient pattern */
     #ffffff55 10px,
-    /* #f0f0f0 10px, */
-    /* #ffffff55 20px,  */
     #f0f0f0 20px 
   ), repeating-linear-gradient( #ffffff55, #ffffff );
 
@@ -25,8 +20,7 @@
 .image-container {
     flex: 0 0 auto;
     margin-right: 20px;
-    /* z-index: -1;
-    position: relative; */
+    padding:2%;
   }
   
   /* CSS for the circular frame container */
@@ -34,7 +28,6 @@
     width: 70vh; 
     height: 70vh; 
     border-radius: 50%; /* Makes it circular */
-    /* border: 1px solid #36454F; Add a border and adjust the color */
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
     overflow: hidden; /* Hides overflowing image content */
     object-fit: contain;
@@ -64,12 +57,12 @@
     margin-bottom: 0px; /* Adjust spacing as needed */
     font-weight: 800;
     letter-spacing: 1px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
   }
   h3 {
     font-weight: 400;
     letter-spacing: 1px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     margin-bottom: 0;
     color: #36454F;
   }
@@ -81,7 +74,7 @@
     text-align: left;
     font-weight: 400;
     letter-spacing: 1px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
   }
 
   .flat-button {
@@ -89,7 +82,7 @@
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-decoration: none;
     padding: 10px 18px;
     border: 1px solid #36454F;
