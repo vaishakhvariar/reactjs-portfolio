@@ -1,26 +1,53 @@
-/* Style for the navigation bar */
-/* .nav-bar {
-  display: none;
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  border-radius: 40px; 
-  padding: 5px;
-  margin: 0px 50%;
+
+.container{
+  display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%; /* Ensure full height */
+    padding: 0 20px;
+    padding-bottom: 2rem;
+}
+.container .nav-container{
+  /* display: flex;
+  justify-content: flex-start;  */
+  height: 100%; /* Ensure full height */
+  margin-right: auto; 
+  /* padding: 0 20px;
+  padding-bottom: 2rem; */
+}
+
+.container .nav-container .logo {
+  display: block;
+  /* padding: 8px 0; */
+  height: 100%;
+  
+}
+
+/* Style for the logo image */
+.container .nav-container .logo img {
+  display: block;
+  width: 60px; 
+  height: 100%;
+}
+
+.nav-bar {
+  height: 100%;
+  flex: 1;
   text-align: center;
-  padding-bottom: 5rem;
-} */
+}
 
 /* Style for the navigation list */
 .nav-list {
   list-style: none;
-  padding-bottom: 2rem;
   margin: 0;
   display: flex;
+  width: 100%;
   justify-content: center; 
+  align-items: center;
 }
 
 /* Style for the list item (menu item) */
-.nav-item {
+ .nav-item {
   margin-right: 20px;
 }
 
@@ -29,7 +56,7 @@
   align-items: center;
   appearance: none;
   background-color: #fff;
-  border-radius: 15%;
+  border-radius: 8%;
   /* border-radius: 24px; */
   border-style: none;
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
@@ -38,7 +65,7 @@
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  /* font-family: "Google Sans",Roboto,Arial,sans-serif; */
   font-size: 14px;
   font-weight: 500;
   height: 48px;
@@ -58,7 +85,6 @@
   width: auto;
   will-change: transform,opacity;
   z-index: 0;
-
 }
 
 /* Style for the active NavLink */
@@ -103,3 +129,85 @@
 .nav-link:disabled {
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
+
+ 
+.hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span{
+  width: 100%;
+  height: 2px;
+  background-color: #36454F;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links .navham-link{
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open{
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+
+
