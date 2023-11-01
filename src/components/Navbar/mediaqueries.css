@@ -10,8 +10,9 @@
       right: 5%;
     } */
     display: flex;
-  justify-content: flex-end; /* Right-align the content */
-  align-items: center;
+    justify-content: flex-end; /* Right-align the content */
+    align-items: center;
+    float: right;
 }
   
-  }
+}
