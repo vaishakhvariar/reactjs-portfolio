@@ -2,8 +2,11 @@
 .profile-container {
   display: flex; 
   align-items: center; 
-  justify-content: flex-start; 
+  /* justify-content: flex-start;  */
+  padding-top: 2vh;
+  height: 75vh;
   width: 100%; 
+  min-height: fit-content;
   border-radius: 1%;
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
   background: repeating-radial-gradient(
@@ -18,29 +21,19 @@
 
 /* CSS for image container */
 .image-container {
-    flex: 0 0 auto;
     margin-right: 20px;
     padding:2%;
   }
-  
-  /* CSS for the circular frame container */
-  .circular-frame {
-    width: 70vh; 
-    height: 70vh; 
-    border-radius: 50%; /* Makes it circular */
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-    overflow: hidden; /* Hides overflowing image content */
-    object-fit: contain;
-  }
-  
-  /* CSS for the profile image */
-  .profile-image {
-    max-width: 100%; 
-    /* height: auto;  */
-    height: 100%;
-    display: block; 
-  }
 
+    /* CSS for the profile image */
+    .profile-picture {
+      display: flex;
+      height: 400px;
+      width: 400px;
+      margin: auto 0;
+
+    }
+  
   .text-area {
     flex: 1; /* Allow it to grow and take available space */
     display: flex; /* Use Flexbox for text area layout */
@@ -77,7 +70,14 @@
     /* font-family: sans-serif; */
   }
 
-  .flat-button {
+  .button-row{
+    flex: row;
+    justify-items: space-between;
+    width: 100%;
+  }
+  
+
+  .flat-button, .flat-button2 {
     color: #36454F ;
     font-size: 13px;
     font-weight: 400;
@@ -95,4 +95,131 @@
         background: #36454F;
         color: #fff;
     }
+}
+
+/* .flat-button {
+  flex: 1; 
+}
+
+.flat-button2 {
+  flex: 1; 
+} */
+
+@media screen and (max-width: 1000px){
+
+  .profile-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* justify-content: flex-start;  */
+    padding: 2%;
+    height: 110%;
+    width: 100%; 
+    min-height: fit-content;
+    border-radius: 1%;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    background: repeating-radial-gradient(
+      circle at 0 0, /* Adjusts position as needed */
+      transparent 0,
+      transparent 10px, /* Adjusts the size of the gradient pattern */
+      #ffffff55 10px,
+      #f0f0f0 20px 
+    ), repeating-linear-gradient( #ffffff55, #ffffff );
+  
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    /* padding:2%; */
+    width: 75%;
+  }
+
+  .profile-picture {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+.text-area {
+  /* flex: 1; */
+  display: flex; /* Use Flexbox for text area layout */
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  /* position: relative;
+  z-index: -1; */
+}
+
+h1 {
+  font-size: 2.5em; 
+  font-weight: bold;
+  color: #36454F; 
+  margin-bottom: 0px; 
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #36454F;
+}
+p {
+  font-size: 1em; 
+  line-height: 1.5; 
+  color: #666; 
+  margin-bottom: 0px; 
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.button-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flat-button {
+  color: #36454F ;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 4px;
+  /* font-family: sans-serif; */
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #36454F;
+  border-radius: 4.5%;
+  margin-top: 25px;
+  float: left;
+  animation: fadeIn 1s 1.8s backwards;
+  white-space: nowrap;
+  &:hover {
+      background: #36454F;
+      color: #fff;
+  }
+}
+
+.flat-button2{
+  color: #36454F ;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 4px;
+  /* font-family: sans-serif; */
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #36454F;
+  border-radius: 4.5%;
+  margin-top: 25px;
+  float: left;
+  animation: fadeIn 1s 1.8s backwards;
+  white-space: nowrap;
+  &:hover {
+      background: #36454F;
+      color: #fff;
+  }
+
 }

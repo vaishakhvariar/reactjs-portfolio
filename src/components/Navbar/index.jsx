@@ -38,7 +38,7 @@ const Navbar = () => {
                 <nav className='desktop-nav'>
                     <ul className="nav-list">
                         <li className="nav-item">
-                            <NavLink exact="true" activeclassname="active" className="nav-link" to='/'>
+                            <NavLink exact="true" activeclassname="active" className="nav-link" to='about'>
                                 About
                             </NavLink>
                         </li>
@@ -53,7 +53,7 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink exact="true" activeclassname="active" className="nav-link" to='/'>
+                            <NavLink exact="true" activeclassname="active" className="nav-link" to='contact'>
                                 Contact
                             </NavLink>
                         </li>
