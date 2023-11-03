@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import './index.css';
-import Logo from '../../assets/images/lightlogo.svg';
+import Logo from '/assets/images/lightlogo.svg';
 import {useState, useRef, useEffect} from 'react';
 import './mediaqueries.css';
 

@@ -117,7 +117,7 @@ h1 {
           white-space: nowrap;
           &:hover {
               background: #fff;
-              color: #36454F;
+              color: #36454f;
           }
         }
       }

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Profile = () => (
     <div className='profile-container'>
         <div className='image-container'>
-        <img src="src\assets\images\cirproimg.png" alt="My profile image" className='profile-picture' />
+        <img src="\assets\images\cirproimg.png" alt="My profile image" className='profile-picture' />
         </div>
         <div className='text-area'>
             <p>Hi, my name is</p>
@@ -19,7 +19,7 @@ const Profile = () => (
                 web applications that deliver exceptional user experiences.</p>
                 <div className='button-row'>
                 <Link to="/contact" className='flat-button'> Contact Me</Link>
-                <Link to='src\assets\cv\VaishakhVariar_CV.pdf' target='_blank' className='flat-button2'> Download CV</Link>
+                <Link to='\assets\cv\VaishakhVariar_CV.pdf' target='_blank' className='flat-button2'> Download CV</Link>
                 </div>
 
          </div>
