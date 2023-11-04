@@ -8,7 +8,7 @@ const Profile = () => (
         </div>
         <div className='text-area'>
             <p>Hi, my name is</p>
-            <h1>Vaishakh Variar.</h1>
+            <h1 className='my-name'>Vaishakh Variar.</h1>
             <h3> Front-End Developer | Javascript | React</h3>
             <p className='profile-content'>I am a web developer with a passion 
                 for creating dynamic and innovative web applications. 

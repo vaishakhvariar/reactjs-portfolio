@@ -14,13 +14,12 @@ const Education = () => {
                 <h2>University College Cork, Ireland</h2>
                 <ul className='ucc-list'>
                     <h3>Key Modules</h3>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
+                    <li>Database Technology</li>
+                    <li>Information Storage and Retrieval</li>
+                    <li>Optimisation</li>
+                    <li>Applied Computer Simulation and Analysis,</li>
+                    <li>Topics in Artificial Intelligence</li>
+                    <li>Data Mining</li>
                 </ul>
                 
             </div>
@@ -32,13 +31,12 @@ const Education = () => {
                 <h2>NMAM Institute of Technology, India</h2>
                 <ul className='nmamit-list'>
                     <h3>Key Modules</h3>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
-                    <li>Course 1</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Web Development</li>
+                    <li>Database Systems</li>
+                    <li>Computer Networks</li>
+                    <li>Operating Systems</li>
                 </ul>
                
             </div>    
