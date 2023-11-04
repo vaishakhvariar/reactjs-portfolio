@@ -62,6 +62,7 @@ h1 {
 }
 
 @media screen and (max-width: 786px){
+    .education-container{
     .education-1{
         display: flex;
         align-content: center;
@@ -96,5 +97,7 @@ h1 {
             
         }
     }
+
+}
   
-  }
+}

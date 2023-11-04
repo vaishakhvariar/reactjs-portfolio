@@ -7,7 +7,7 @@ const Education = () => {
     <div className='education-container'>
         <h1>Education </h1>
         <div className='education-1'>
-            <img className='ucc-image' src='src\assets\images-1\ucc.jpg' alt='Photograph of University College Cork circa. 2020' />
+            <img className='ucc-image' src='\assets\images\ucc.jpg' alt='Photograph of University College Cork circa. 2020' />
             <div className='uni-info-1'>
             <p className='year-1'>2020-2021</p>                
                 <h3>Master of Science in Computing Science </h3>
@@ -42,7 +42,7 @@ const Education = () => {
                 </ul>
                
             </div>    
-            <img className='nmamit-image' src='src\assets\images-1\nmamit.jpg' alt='Photograph of NMAMIT, Nitte circa. 2019' />     
+            <img className='nmamit-image' src='\assets\images\nmamit.jpg' alt='Photograph of NMAMIT, Nitte circa. 2019' />     
         </div>
     </div>
 
