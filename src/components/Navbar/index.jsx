@@ -43,7 +43,7 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink exact="true" activeclassname="active" className="nav-link" to='/'>
+                            <NavLink exact="true" activeclassname="active" className="nav-link" to='education'>
                                 Education
                             </NavLink>
                         </li>
@@ -74,7 +74,7 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink exact="true" onClick={toggleMenu} activeclassname="active" className="navham-link" to='/'>
+                                <NavLink exact="true" onClick={toggleMenu} activeclassname="active" className="navham-link" to='education'>
                                     Education
                                 </NavLink>
                             </li>
