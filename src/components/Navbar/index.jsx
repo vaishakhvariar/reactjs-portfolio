@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import './index.css';
-import Logo from '/assets/images/lightlogo.svg';
+import Logo from '/assets/images/logo.png';
 import {useState, useRef, useEffect} from 'react';
 import './mediaqueries.css';
 
@@ -48,8 +48,8 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <NavLink exact="true" activeclassname="active" className="nav-link" to='/'>
-                                Projects
+                            <NavLink exact="true" activeclassname="active" className="nav-link" to='skills'>
+                                Skills
                             </NavLink>
                         </li>
                         <li className='nav-item'>
@@ -79,8 +79,8 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
-                                <NavLink exact="true" onClick={toggleMenu} activeclassname="active" className="navham-link" to='/'>
-                                    Projects
+                                <NavLink exact="true" onClick={toggleMenu} activeclassname="active" className="navham-link" to='skills'>
+                                    Skills
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
