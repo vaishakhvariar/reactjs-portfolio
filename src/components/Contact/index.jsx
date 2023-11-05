@@ -29,7 +29,6 @@ const Contact = () => {
         <div className='form-container'>
             <p> Get in Touch </p>
         <h1> Contact Me </h1> 
-        <p> <a className='email-link' href='mailto:vaishakhvariar@gmail.com'> vaishakhvariar@gmail.com </a></p>  
         <form className='form-main' ref={form} onSubmit={sendEmail}>
               <ul className='form-elements-list'>
                 <li className="half">

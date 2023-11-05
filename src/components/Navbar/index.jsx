@@ -1,6 +1,6 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './index.css';
-import Logo from '/assets/images/logo.png';
+// import Logo from '/assets/images/logo.png';
 import {useState, useRef, useEffect} from 'react';
 import './mediaqueries.css';
 
@@ -29,11 +29,11 @@ const Navbar = () => {
 
     return (
         <div className='container'>
-            <div className='nav-container'>
+            {/* <div className='nav-container'>
                 <Link className='logo' to='/'>
                     <img src={Logo} alt='Website logo' />
                 </Link>
-            </div>
+            </div> */}
             <div className='nav-bar'>
                 <nav className='desktop-nav'>
                     <ul className="nav-list">

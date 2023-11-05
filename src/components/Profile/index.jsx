@@ -10,13 +10,16 @@ const Profile = () => (
             <p>Hi, my name is</p>
             <h1 className='my-name'>Vaishakh Variar.</h1>
             <h3> Front-End Developer | Javascript | React</h3>
-            <p className='profile-content'>I am a web developer with a passion 
-                for creating dynamic and innovative web applications. 
-                I hold a master s degree in computing science from 
-                University College Cork, where I honed my skills in 
-                the world of technology. With a strong foundation in 
-                computing science, I specialize in designing and building 
-                web applications that deliver exceptional user experiences.</p>
+            <p className='profile-content'>I'm a passionate and dedicated web 
+            developer with a strong foundation in web technologies. 
+            I hold a Master's degree in Computer Science from 
+            University College Cork and am committed to delivering 
+            high-quality web solutions. I'm always eager to learn and 
+            grow, and I take pride in crafting user-friendly and 
+            visually appealing websites, striving for clean and 
+            efficient code. With a background in web development, 
+            I'm excited to tackle new challenges and contribute my 
+            skills to create outstanding online experiences.</p>
                 <div className='button-row'>
                 <Link to="/contact" className='flat-button'> Contact Me</Link>
                 <Link to='assets\cv\VaishakhVariar_CV.pdf' target='_blank' className='flat-button2'> Download CV</Link>

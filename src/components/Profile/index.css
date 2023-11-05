@@ -8,12 +8,12 @@
   width: 100vh;
   min-height: fit-content;
   min-width: fit-content;
-  border-radius: 1%;
+  border-radius: 50px;
   box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
   background: repeating-radial-gradient(
-    circle at 0 0, /* Adjusts position as needed */
+    circle at 0 0, 
     transparent 0,
-    transparent 10px, /* Adjusts the size of the gradient pattern */
+    transparent 10px,
     #ffffff55 10px,
     #f0f0f0 20px 
   ), repeating-linear-gradient( #ffffff55, #ffffff );
@@ -57,14 +57,13 @@
     color: #36454F;
   }
   p {
-    font-size: 1rem; /* Adjust the font size as needed */
-    line-height: 1.5; /* Adjust line height fo  r readability */
-    color: #666; /* Change the color to your preference */
-    margin-bottom: 0px; /* Adjust spacing as needed */
+    font-size: 1rem; 
+    line-height: 1.5;
+    color: #666; 
+    margin-bottom: 0px; 
     text-align: left;
     font-weight: 400;
     letter-spacing: 1px;
-    /* font-family: sans-serif; */
   }
 
   .button-row{
@@ -75,22 +74,22 @@
   
 
   .flat-button, .flat-button2 {
-    color: #36454F ;
+    color: #fff;
+    background-color: #36454F;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
-    /* font-family: sans-serif; */
     text-decoration: none;
     padding: 10px 18px;
     border: 1px solid #36454F;
-    border-radius: 4.5%;
+    border-radius: 50px;
     margin-top: 25px;
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
     &:hover {
-        background: #36454F;
-        color: #fff;
+        background: #fff;
+        color: #36454F;
     }
 }
 
@@ -108,16 +107,7 @@
     width: 100%; 
     min-height: fit-content;
     min-width: fit-content;
-    border-radius: 1%;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-    background: repeating-radial-gradient(
-      circle at 0 0, /* Adjusts position as needed */
-      transparent 0,
-      transparent 10px, /* Adjusts the size of the gradient pattern */
-      #ffffff55 10px,
-      #f0f0f0 20px 
-    ), repeating-linear-gradient( #ffffff55, #ffffff );
-  
+    border-radius: 50px;
   }
   .image-container {
     display: flex;
@@ -172,7 +162,8 @@ h3 {
 }
 
 .flat-button {
-  color: #36454F ;
+  color: #fff;
+  background-color: #36454F;
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 4px;
@@ -180,34 +171,34 @@ h3 {
   text-decoration: none;
   padding: 10px 18px;
   border: 1px solid #36454F;
-  border-radius: 4.5%;
+  border-radius: 50px;
   margin-top: 25px;
   float: left;
   animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
   &:hover {
-      background: #36454F;
-      color: #fff;
+      background: #fff;
+      color: #36454F;
   }
 }
 
 .flat-button2{
-  color: #36454F ;
+  color: #fff;
+  background-color: #36454F;
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 4px;
-  /* font-family: sans-serif; */
   text-decoration: none;
   padding: 10px 18px;
   border: 1px solid #36454F;
-  border-radius: 4.5%;
+  border-radius: 50px;
   margin-top: 25px;
   float: left;
   animation: fadeIn 1s 1.8s backwards;
   white-space: nowrap;
   &:hover {
-      background: #36454F;
-      color: #fff;
+      background: #fff;
+      color: #36454F;
   }
 
 }
