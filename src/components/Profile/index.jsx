@@ -22,7 +22,7 @@ const Profile = () => (
             skills to create outstanding online experiences.</p>
                 <div className='button-row'>
                 <Link to="/contact" className='flat-button'> Contact Me</Link>
-                <Link to='/assets/cv/CV_Vaishakh.pdf' target='_blank' className='flat-button2'> Download CV</Link>
+                <Link to='/assets/cv/CV_Vaishakh_Variar.pdf' target='_blank' className='flat-button2'> Download CV</Link>
                 </div>
 
          </div>
