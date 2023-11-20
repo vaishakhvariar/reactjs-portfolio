@@ -29,11 +29,6 @@ const Navbar = () => {
 
     return (
         <div className='container'>
-            {/* <div className='nav-container'>
-                <Link className='logo' to='/'>
-                    <img src={Logo} alt='Website logo' />
-                </Link>
-            </div> */}
             <div className='nav-bar'>
                 <nav className='desktop-nav'>
                     <ul className="nav-list">
