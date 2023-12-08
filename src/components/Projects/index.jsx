@@ -4,10 +4,13 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
 
 const screenCaps = [
-    { path: '/assets/images/QuizApp.png', name:'Quiz App', github: 'https://github.com/vaishakhvariar/reactJS-quiz-app', description:'Developed a quiz application with React.js that interfaces with QuizAPI to generate a range of quizzes. The app allows users to select their preferred topics and difficulty, providing a personalized experience. Deployed on Vercel, it showcases my knack for building engaging and user-friendly web applications.' },
-    { path:'/assets/images/RecipesApp.png', name:'Recipes App', github: 'https://github.com/vaishakhvariar/reactjs-recipe-app', description:' Created a recipe discovery application in React.js, utilizing the Spoonacular API to deliver a wide selection of cuisines. The app features an intuitive search function and is organized for ease of navigation. Employing the "styled-component" library, I ensured a responsive design that enhanced user engagement. The application is live on Vercel.' },
-    { path:'/assets/images/ToDoList.png', name:'Simple To-Do List', github:'https://github.com/vaishakhvariar/reactjs-to-do-list', description:'Developed a quiz application with React.js that interfaces with QuizAPI to generate a range of quizzes. The app allows users to select their preferred topics and difficulty, providing a personalized experience. Deployed on Vercel, it showcases my knack for building engaging and user-friendly web applications.' },
-    // { path:'/assets/images/PortfolioSnapshot.png', name:'Portfolio', github: 'https://github.com/vaishakhvariar/reactjs-portfolio', description:'Designed and implemented a web-based portfolio using React.js, showcasing my professional and technical skills. Deployed on Firebase, the site offers a clean, responsive layout for accessibility across multiple devices. Aesthetic details were carefully crafted using CSS, ensuring the portfolio is both user-friendly and visually appealing.' },
+    { path: '/assets/images/QuizApp.png',
+    name:'Quiz App', github: 'https://github.com/vaishakhvariar/reactJS-quiz-app', 
+    liveLink: 'https://react-js-quiz-app-tau.vercel.app/',
+    description:'Developed a quiz application with React.js that interfaces with QuizAPI to generate a range of quizzes. The app allows users to select their preferred topics and difficulty, providing a personalized experience. Deployed on Vercel, it showcases my knack for building engaging and user-friendly web applications.' },
+    { path:'/assets/images/RecipesApp.png', liveLink: 'https://reactjs-recipe-app-blond.vercel.app/', name:'Recipes App', github: 'https://github.com/vaishakhvariar/reactjs-recipe-app', description:' Created a recipe discovery application in React.js, utilizing the Spoonacular API to deliver a wide selection of cuisines. The app features an intuitive search function and is organized for ease of navigation. Employing the "styled-component" library, I ensured a responsive design that enhanced user engagement. The application is live on Vercel.' },
+    { path:'/assets/images/ToDoList.png',  liveLink: 'https://reactjs-to-do-list-ivory.vercel.app/', name:'Simple To-Do List', github:'https://github.com/vaishakhvariar/reactjs-to-do-list', description:'Developed a quiz application with React.js that interfaces with QuizAPI to generate a range of quizzes. The app allows users to select their preferred topics and difficulty, providing a personalized experience. Deployed on Vercel, it showcases my knack for building engaging and user-friendly web applications.' },
+    // { path:'/assets/images/PortfolioSnapshot.png', liveLink: 'https://react-js-quiz-app-tau.vercel.app/', name:'Portfolio', github: 'https://github.com/vaishakhvariar/reactjs-portfolio', description:'Designed and implemented a web-based portfolio using React.js, showcasing my professional and technical skills. Deployed on Firebase, the site offers a clean, responsive layout for accessibility across multiple devices. Aesthetic details were carefully crafted using CSS, ensuring the portfolio is both user-friendly and visually appealing.' },
 ]
 
 const Projects = () => {
@@ -27,7 +30,9 @@ const Projects = () => {
       <ProjectsContainer>
         {screenCaps.map((project, index) => (
         <Project key={index} expanded={expandedProjects[index]}>
-            <ProjectImage src={project.path} alt={project.name} />
+            <a href={project.liveLink} target="_blank" rel="noreferrer">
+                <ProjectImage src={project.path} alt={project.name} />
+            </a>
             <ProjectContent>
               <ProjectName>{project.name}</ProjectName>
               <div>
@@ -90,6 +95,18 @@ const ProjectImage = styled.img`
   object-fit: cover;
   border: 2px solid #ccc; 
   border-radius: 8px;
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 5px -1px, rgba(0, 0, 0, 0.06) 0 6px 10px 0, rgba(0, 0, 0, 0.04) 0 1px 18px 0;
+    transform: scale(1.1);  // Adjust the scale factor as needed
+  }
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 5px -1px, rgba(0, 0, 0, 0.06) 0 6px 10px 0, rgba(0, 0, 0, 0.04) 0 1px 18px 0;
+  }
 `;
 
 const ProjectContent = styled.div`
