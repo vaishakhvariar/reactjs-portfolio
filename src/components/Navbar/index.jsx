@@ -43,6 +43,11 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className='nav-item'>
+                            <NavLink exact="true" activeclassname="active" className="nav-link" to='projects'>
+                                Projects
+                            </NavLink>
+                        </li>                        
+                        <li className='nav-item'>
                             <NavLink exact="true" activeclassname="active" className="nav-link" to='skills'>
                                 Skills
                             </NavLink>
@@ -71,6 +76,11 @@ const Navbar = () => {
                             <li className='nav-item'>
                                 <NavLink exact="true" onClick={toggleMenu} activeclassname="active" className="navham-link" to='education'>
                                     Education
+                                </NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                <NavLink exact="true" onClick={toggleMenu} activeclassname="active" className="navham-link" to='projects'>
+                                    Projects
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
